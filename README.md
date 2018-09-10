@@ -12,7 +12,7 @@
 
 3. start the mock server (using node, nodemon, or your prefered script watcher)
 
-   `node mockServer.js`
+   `node server.js`
 
 
 4. curl any of the endpoints in mocks/helloworld

@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "genuine-mock-server": "^1.0.5"
+    "genuine-mock-server": "^2.0.0"
   }
 }

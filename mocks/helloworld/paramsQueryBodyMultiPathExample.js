@@ -1,7 +1,6 @@
-const { allPaths } = require('../../MockingBird.js');
-
-module.exports = allPaths('/api/helloworld/withPath', [
+module.exports = [
   {
+    path: '/api/helloworld/multipath',
     method: 'get',
     statusCode: 200,
     waitTime: 0,
@@ -10,6 +9,7 @@ module.exports = allPaths('/api/helloworld/withPath', [
     }
   },
   {
+    path: '/api/helloworld/querystring',
     method: 'get',
     statusCode: 200,
     waitTime: 0,
@@ -21,6 +21,7 @@ module.exports = allPaths('/api/helloworld/withPath', [
     }
   },
   {
+    path: '/api/helloworld/querystring',
     method: 'get',
     statusCode: 200,
     waitTime: 0,
@@ -33,31 +34,33 @@ module.exports = allPaths('/api/helloworld/withPath', [
     }
   },
   {
+    path: '/api/helloworld/someparam/#someparam', // params can use # or : as delimiter
     method: 'get',
     statusCode: 200,
     waitTime: 200,
     params: {
-      paramName: 'bar',
+      someparam: 'bar',
     },
     response: {
       key: "single param only response",
     }
   },
   {
+    path: '/api/helloworld/someparam/:someparam', // params can use # or : as delimiter
     method: 'get',
     statusCode: 200,
     waitTime: 200,
     query: {
-      foo: 'value here, IM DIFFEENT!',
+      foo: 'bar',
     },
     params: {
-      paramName: 'param value here',
+      someparam: 'bar',
     },
     body: {
-      baz: "still a different value",
+      baz: "foo",
     },
     response: {
       key: "params, query, body response",
     }
   },
-]);
+];

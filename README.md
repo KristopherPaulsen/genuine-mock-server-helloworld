@@ -18,4 +18,4 @@
 4. curl any of the endpoints in mocks/helloworld
 
 
-   `curl http://localhost:8080/helloworld/example`
+   `curl http://localhost:8080/api/helloworld/simple`

@@ -1,6 +1,6 @@
 {
   "name": "testing",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "genuine-mock-server": "^2.0.0"
+    "genuine-mock-server": "^1.1.0"
   }
 }

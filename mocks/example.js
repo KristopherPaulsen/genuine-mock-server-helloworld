@@ -2,10 +2,7 @@ module.exports = [
   {
     request: {
       method: 'post',
-      path: '/api/helloworld/simple',
-      body: {
-        val: "1",
-      }
+      path: '/api/helloworld',
     },
     response: {
       data: {

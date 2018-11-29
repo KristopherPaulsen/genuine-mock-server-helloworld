@@ -26,6 +26,7 @@ module.exports = defaultPath('/api/helloworld/defaultpath/', [
   {
     request: {
       method: 'delete',
+      path: '/api/helloworld/alreadydefined/'
     },
     response: {
       data: {
